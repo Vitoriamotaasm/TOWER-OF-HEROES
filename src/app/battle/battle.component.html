@@ -1,0 +1,16 @@
+<div class="battle-container">
+    <h2>Batalha</h2>
+    <div class="stats">
+      <h3>Jogador</h3>
+      <p>Vida: {{ player.stats.health }}</p>
+      <p>Ataque: {{ player.stats.attack }}</p>
+      <p>Defesa: {{ player.stats.defense }}</p>
+    </div>
+    <div class="stats">
+      <h3>Inimigo</h3>
+      <p>Vida: {{ enemy.stats.health }}</p>
+      <p>Ataque: {{ enemy.stats.attack }}</p>
+      <p>Defesa: {{ enemy.stats.defense }}</p>
+    </div>
+    <button (click)="attack()">Atacar</button>
+  </div> 

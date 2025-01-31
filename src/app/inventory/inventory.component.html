@@ -1,0 +1,10 @@
+<div class="inventory-container">
+    <h2>Inventário</h2>
+    <div *ngFor="let item of player.inventory" class="item">
+      <h3>{{ item.name }}</h3>
+      <p>Tipo: {{ item.type }}</p>
+      <p *ngIf="item.effect.attack">Ataque: +{{ item.effect.attack }}</p>
+      <p *ngIf="item.effect.defense">Defesa: +{{ item.effect.defense }}</p>
+      <p *ngIf="item.effect.health">Vida: +{{ item.effect.health }}</p>
+    </div>
+  </div>

@@ -1,0 +1,12 @@
+<div class="shop-container">
+    <h2>Loja</h2>
+    <div *ngFor="let item of items" class="item">
+      <h3>{{ item.name }}</h3>
+      <p>Tipo: {{ item.type }}</p>
+      <p *ngIf="item.effect.attack">Ataque: +{{ item.effect.attack }}</p>
+      <p *ngIf="item.effect.defense">Defesa: +{{ item.effect.defense }}</p>
+      <p *ngIf="item.effect.health">Vida: +{{ item.effect.health }}</p>
+      <p>Custo: {{ item.cost }} ouro</p>
+      <button (click)="buyItem(item)">Comprar</button>
+    </div>
+  </div> 

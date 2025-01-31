@@ -1,0 +1,25 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  
+    h1 {
+      margin: 0;
+    }
+  
+    nav {
+      margin-top: 10px;
+  
+      a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

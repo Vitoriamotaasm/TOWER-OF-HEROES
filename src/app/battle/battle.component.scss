@@ -1,0 +1,19 @@
+.battle-container {
+    text-align: center;
+    padding: 20px;
+  
+    .stats {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      display: inline-block;
+    }
+  
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  } 
+  
