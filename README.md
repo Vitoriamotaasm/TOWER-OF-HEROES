@@ -1,60 +1,82 @@
-# Torresdosherois
+# TOWER-OF-HEROES 🎮🦸‍♂️
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+## Descrição ✨
 
-## Development server
+TOWER-OF-HEROES é um jogo de heróis desenvolvido com Angular 18. O projeto oferece uma experiência divertida, onde você pode interagir com heróis em uma interface dinâmica e moderna. A aplicação é construída para mostrar o poder dos frameworks de frontend de forma simples e eficaz.
 
-To start a local development server, run:
+## Tecnologias Usadas 🛠️
 
-```bash
-ng serve
-```
+- Angular 18 🚀
+- TypeScript 📝
+- HTML5, CSS3 🌐
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. [Introdução](#introdução)
+2. [Tecnologias Usadas](#tecnologiasusadas)
+3. [Como Rodar o Projeto](#comorodaroprojeto)
+4. [Contribuição](#contribuição)
+5. [Funcionalidades](#funcionalidades)
+6. [Como Contribuir](#comocontribuir)
+7. [Licença](#licenca)
 
-## Code scaffolding
+## Como Rodar o Projeto 🚀
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clone o repositório:
 
-```bash
-ng generate component component-name
-```
+    ```bash
+    git clone https://github.com/Vitoriamotaasm/TOWER-OF-HEROES.git
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Navegue até o diretório do projeto:
 
-```bash
-ng generate --help
-```
+    ```bash
+    cd TOWER-OF-HEROES
+    ```
 
-## Building
+3. Instale as dependências:
 
-To build the project run:
+    ```bash
+    npm install
+    ```
 
-```bash
-ng build
-```
+4. Rode o servidor de desenvolvimento:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+    ```bash
+    ng serve
+    ```
 
-## Running unit tests
+   Acesse a aplicação em [http://localhost:4200](http://localhost:4200).
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Funcionalidades ⚡
 
-```bash
-ng test
-```
+- Interface interativa e amigável 🎨
+- Jogo de heróis com mecânicas envolventes 🦸‍♀️🦸‍♂️
+- Criado com Angular 18 no modo standalone ⚙️
 
-## Running end-to-end tests
+## Como Contribuir 🤝
 
-For end-to-end (e2e) testing, run:
+1. Faça o fork do repositório 🍴
+2. Crie uma branch para sua feature:
 
-```bash
-ng e2e
-```
+    ```bash
+    git checkout -b minha-feature
+    ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+3. Faça suas alterações e faça o commit:
 
-## Additional Resources
+    ```bash
+    git commit -m "Adiciona minha feature"
+    ```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# TOWER-OF-HEROES
+4. Faça o push para sua branch:
+
+    ```bash
+    git push origin minha-feature
+    ```
+
+5. Abra um Pull Request 🔄
+
+
+
+## Licença 📜
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
