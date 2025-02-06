@@ -24,12 +24,14 @@ export class ShopComponent {
   }
 
   buyItem(item: Item) {
+    console.log('Botão comprar clicando para o item:', item);
     if (this.player.gold >= item.cost) {
       this.player.gold -= item.cost;
       this.player.inventory.push(item);
       this.playerService.updatePlayer(this.player); 
     } else {
       alert('Ouro insuficiente!');
+      console.log('Ouro insuficiente para comprar o item:', item);
     }
   }
 } 

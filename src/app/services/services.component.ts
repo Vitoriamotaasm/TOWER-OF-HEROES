@@ -9,3 +9,54 @@ import { Component } from '@angular/core';
 export class ServicesComponent {
 
 }
+import { Injectable, signal } from '@angular/core';
+import { Router } from '@angular/router';
+import { Observable, from } from 'rxjs';
+import { tap, catchError } from 'rxjs/operators';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class NavigationService {
+  private activePage = signal<string>('/dashboard'); // Sempre inicia no dashboard
+
+  constructor(private router: Router) {}
+
+  /**
+   * Navega para uma rota específica e define a página ativa.
+   */
+  navigateTo(route: '/dashboard' | '/vehicles' | '/users' | '/rentals'): Observable<boolean> {
+    return from(this.router.navigate([route])).pipe(
+      tap((success) => {
+        if (success) {
+          this.activePage.set(route);
+        }
+      }),
+      catchError((error) => {
+        console.error('❌ Erro ao navegar:', error);
+        throw error;
+      })
+    );
+  }
+
+  /**
+   * Obtém a página ativa atual.
+   */
+  getActivePage(): string {
+    return this.activePage();
+  }
+
+  /**
+   * Verifica se a rota fornecida corresponde à página ativa armazenada.
+   */
+  isActivePage(route: string): boolean {
+    return this.activePage() === route;
+  }
+
+  /**
+   * Reseta a página ativa para o dashboard.
+   */
+  resetActivePage(): void {
+    this.activePage.set('/dashboard');
+  }
+}
