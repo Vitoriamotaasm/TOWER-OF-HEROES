@@ -18,14 +18,11 @@ import { tap, catchError } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class NavigationService {
-  private activePage = signal<string>('/dashboard'); // Sempre inicia no dashboard
+  private activePage = signal<string>('/home'); 
 
   constructor(private router: Router) {}
 
-  /**
-   * Navega para uma rota específica e define a página ativa.
-   */
-  navigateTo(route: '/dashboard' | '/vehicles' | '/users' | '/rentals'): Observable<boolean> {
+  navigateTo(route: '/shop' | '/models' | '/services' | '/home'): Observable<boolean> {
     return from(this.router.navigate([route])).pipe(
       tap((success) => {
         if (success) {
